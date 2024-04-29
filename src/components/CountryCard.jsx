@@ -1,12 +1,12 @@
 import React from "react";
 
 function CountryCard({ country, onClick, isSelected }) {
-    const { name, emoji } = country;
+    const { name} = country;
   
     return (
       <div className={`card ${isSelected && 'selected'}`} onClick={() => onClick(country)}>
         <div className="card-header">
-          <span role="img" aria-label="flag">{emoji}</span> {name}
+          {name}
         </div>
       </div>
     );

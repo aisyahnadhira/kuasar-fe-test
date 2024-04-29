@@ -13,7 +13,6 @@ const GET_COUNTRIES = gql`
   query {
     countries {
       name
-      emoji
       capital
       currency
       phones

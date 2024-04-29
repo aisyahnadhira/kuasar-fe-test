@@ -1,11 +1,29 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+* {
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+body {
   text-align: center;
+  background-image: linear-gradient(
+    to right,
+    rgba(32, 194, 161, 0.678),
+    rgba(0, 119, 255, 0.678)
+  );
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
 
 .card-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  background-color: #f0f0f0;
+  margin: 30px 50px;
+  padding: 40px;
+  border-radius: 80px;
 }
 
 .card {
@@ -29,4 +47,13 @@
 
 .card-body p {
   margin: 5px 0;
+}
+
+.search input{
+  width: calc(100% - 180px);
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 60px; 
+  margin: 10px; 
+  padding: 10px;
 }
